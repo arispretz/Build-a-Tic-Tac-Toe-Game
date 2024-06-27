@@ -1,0 +1,85 @@
+body {
+  font-family: 'Lucida Console', cursive;
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCP978dhlE9VZjUM_71J3ByElwopFWHcNbhLV9rS7u2-DZznmNLFOnVBmthrwxWrzjhliC7K0e2TKE4wUpeJqY31ZRRHJuM9ZNPN1rEidAZyrP3cGjp6XPk_YjZIJ2Wj5d3X7EV9AmaHvSvtMS6b0XwvZE_r6j6IjFjzK_hpymzBpDsDWtK6WX2Hww8G6i/s640/background-1829818_640.jpg');
+  color: #000080;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#game-start {
+  font-size: 22px;
+}
+header, #scores, footer, h1, h4 {
+  text-align: center;
+}
+
+#board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  font-size: 4em;
+  padding: 25px;
+  width: 100px;
+  height: 100px; 
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box; 
+}
+
+.square {
+  border: 3px solid #000080;
+}
+
+.row1 .square {
+  border-bottom: none;
+}
+
+.row3 .square {
+  border-top: none;
+}
+
+.row2 .square:nth-child(1),
+.row1 .square:nth-child(1),
+.row3 .square:nth-child(1) {
+  border-right: none;
+}
+
+.row2 .square:nth-child(3),
+.row1 .square:nth-child(3),
+.row3 .square:nth-child(3) {
+  border-left: none;
+}
+
+#x-select:hover,
+#o-select:hover {
+  cursor: pointer;
+  background-color: #000080;
+  color: #FFFFFF;
+  padding: 5px;
+}
+
+.letter-selected {
+  border: 1px solid #000080;
+  padding: 5px;
+  color: #FFFFFF;
+  background-color: #000080;
+}
+
+#scores {
+  display: none;
+}
